@@ -37,7 +37,7 @@ var server = http.createServer(function (request, response) {
     ".jpg": "image/jpeg",
   };
 
-  response.setHeader("Content-Type", `${fileTypes[suffix] || text/html};charset=utf-8`);
+  response.setHeader("Content-Type", `${fileTypes[suffix] || 'text/html'};charset=utf-8`);
 
   let content;
   try {
